@@ -1,0 +1,90 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the menu */
+.menu-useful-container {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styling for the menu list */
+#menu-useful {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Styling for each menu item */
+.menu-item {
+    position: relative;
+}
+
+/* Menu links */
+.menu-item a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for menu links */
+.menu-item a:hover {
+    color: #4CAF50;
+}
+
+/* Dropdown submenu styling */
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 5px 0;
+    list-style: none;
+    min-width: 180px;
+    z-index: 10;
+}
+
+/* Submenu items */
+.sub-menu .menu-item a {
+    color: #ddd;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Submenu items hover effect */
+.sub-menu .menu-item a:hover {
+    color: #4CAF50;
+}
+
+/* Display submenu on hover */
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+/* SVG icon styling */
+.wpex-open-submenu {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.wpex-svg-icon {
+    fill: #fff;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate the icon on hover */
+.menu-item:hover .wpex-svg-icon {
+    transform: rotate(90deg);
+}

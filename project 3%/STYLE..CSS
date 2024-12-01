@@ -1,0 +1,114 @@
+/* style.css */
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    width: 50%;
+    margin: 5% auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.modal-header .modal-title {
+    font-size: 24px;
+    color: #333;
+}
+
+.modal-header .close {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+}
+
+/* Form Fields */
+.form-group {
+    margin-top: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* File Upload Label */
+label {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Row Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.col-sm-6 {
+    width: 48%;
+}
+
+/* Submit Button */
+.btn-send {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-send:hover {
+    background-color: #0056b3;
+}
+
+/* Modal Footer (if needed) */
+.modal-footer {
+    text-align: right;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.btn-default {
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-default:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+
+    .col-sm-6 {
+        width: 100%;
+    }
+}

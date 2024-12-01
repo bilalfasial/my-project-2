@@ -1,0 +1,106 @@
+/* style.css */
+
+/* Banner Styling */
+#simple-banner {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.simple-banner-text span {
+    font-weight: bold;
+}
+
+/* How It Works Section */
+.white-bg-holder {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.how-it-work-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Columns */
+.work-holder-box .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    text-align: center;
+}
+
+.column .work-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Text */
+.column p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Icons or Image Placeholder Styling */
+.mouse-img,
+.kurta-img,
+.machine-img,
+.pay-delivery-img {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #007bff; /* Adjust this color as per design needs */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .work-holder-box .row {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #simple-banner {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .how-it-work-title {
+        font-size: 24px;
+    }
+
+    .column .work-title {
+        font-size: 18px;
+    }
+
+    .column p {
+        font-size: 13px;
+    }
+}
